@@ -92,12 +92,13 @@ main {
 
 .weather-forecast {
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .weather-forecast-date {
     font-size: 16px;
     color: black;
+    opacity: 0.5;
 }
 
 .weather-forecast-temperature {
@@ -106,7 +107,8 @@ main {
 }
 
 .weather-forecast-temperature-min {
-    opacity: 0.5;
+    opacity: 0.9;
+    color: rgb(248, 236, 1);
 }
 
 footer {
