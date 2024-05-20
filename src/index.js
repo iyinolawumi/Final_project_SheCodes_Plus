@@ -52,7 +52,7 @@ function displayforecast() {
   forecastHtml = 
    forecastHtml +
 
-  ' 
+  '
           <div class="weather-forecast-day">
                 <><div class="weather-forcast-date">${day}</div><div class="weather-forecast-temperature">
               🥶
@@ -67,8 +67,11 @@ function displayforecast() {
             </div>
            </div>
            </div>
-  ';
+';
   });
+
+  let forecastElement = document.querySelector("#forecst");
+  forecastElement.innerHTML = forecastHtml;
 }
 
 let searchForm = document.querySelector("#search-form");
