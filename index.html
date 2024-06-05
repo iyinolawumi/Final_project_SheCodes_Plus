@@ -15,56 +15,47 @@
 </head>
 
 <body>
-    <div class="weather-app">
-        <header>
-            <form id="search-form">
-                <input type="search" placeholder="Enter a city.." required class="search-input" id="search-input" />
-                <input type="submit" value="Search" class="search-button" />
-            </form>
-        </header>
-        <main>
-            <div class="current-weather">
-                <div>
-                    <h1 class="current-city" id="current-city">Paris</h1>
-                    <p class="current-details">
-                        <span id="current-date"></span>, moderate rain <br />
-                        Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
-                    </p>
-                </div>
-                <div class="current-temperature">
-                    <span class="current-temperature-icon">🥶</span><span class="current-temperature-value"
-                        id="current-temperature">24</span><span class="current-temperature-unit">°C</span>
-                </div>
-            </div>
-        </main>
-        <div class="weather-forecast" id="forecast">
-        <div class="row">
-            <div class="col-2">
-                <div class="weather-forcast-date">
-                    Thur
-                </div>
-        <div class="weather-forecast-temperature">
-    🥶
-            <p>
-                <span class="weather-forecast-temperature-max">18</span>
-                <span class="weather-forecast-temperature-min">12</span>
-            </p>
 
+    <body>
+        <div class="weather-app">
+            <header>
+                <form class="search-form" id="search-form">
+                    <input type="search" placeholder="Enter a city.." required id="search-form-input"
+                        class="search-form-input" />
+                    <input type="submit" value="Search" class="search-form-button" />
+                </form>
+            </header>
+            <main>
+                <div class="weather-app-data">
+                    <div>
+                        <h1 class="weather-app-city" id="city"></h1>
+                        <p class="weather-app-details">
+                            <span id="time"></span>,
+                            <span id="description"></span>
+                            <br />
+                            Humidity: <strong id="humidity"></strong>, Wind:
+                            <strong id="wind-speed"></strong>
+                        </p>
+                    </div>
+                    <div class="weather-app-temperature-container">
+                        <div id="icon"></div>
+                        <div class="weather-app-temperature" id="temperature"></div>
+                        <div class="weather-app-unit">°C</div>
+                    </div>
+                </div>
+                <div class="weather-forecast" id="forecast"></div>
+            </main>
+            <footer>
+                <p>
+                    This project was coded by
+                    <a href="https://github.com/iyinolawumi" target="_blank">Olawumi Olaibi</a> and is
+                    <a href="https://github.com/iyinolawumi/Vanilla_weather-homework" target="_blank"> on GitHub</a>
+                    and
+                    <a href="https://Vanilla_weather-homework.vercel.app/" target="_blank">hosted on Vercel</a>
+                </p>
+            </footer>
         </div>
-            </div>
-        </div>
-        </div>
-        <footer>
-            <p>
-                This project was coded by
-                <a href="https://github.com/iyinolawumi" target="_blank">Olawumi Olaibi</a> and is
-                <a href="https://github.com/iyinolawumi/Vanilla_weather-homework" target="_blank"> on GitHub</a>
-                and
-                <a href="https://Vanilla_weather-homework.vercel.app/" target="_blank">hosted on Vercel</a>
-            </p>
-        </footer>
-    </div>
-</body>
-<script src="src/index.js"></script>
+    </body>
+    <script src="src/index.js"></script>
 
 </html>
